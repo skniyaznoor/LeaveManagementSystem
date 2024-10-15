@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.logo img {
+  width: 200px;
+  margin: 0 0 0 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #112954;
+  padding: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f39c12;
+}
+
+.nav-links li.active a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+}
+
+/* .nav-links li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+} */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.3rem;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.login-image img {
+  position: relative;
+  width: 400px;
+  z-index: 1;
+}
+
+.login-image {
+  position: relative;
+  margin-top: 50px;
+  width: 400px;
+}
+
+.entire-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #112954;
+  height: 500px;
+}
+
+.chaos-dots-container {
+  position: relative;
+  top: 30%;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.chaos-dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: #0fe3eb;
+  border-radius: 50%;
+  opacity: 0;
+  animation: moveChaosDots 4s infinite ease-out;
+}
+
+@keyframes moveChaosDots {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y));
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+}
+
+.login-container {
+  background-color: #03fff54a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  height: 350px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.login-container h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #112954;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.login-btn:hover {
+  background-color: rgb(6, 201, 255);
+  color: #112954;
+}
+
+.login-grid {
+  gap: 1px;
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+
+.login-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#cfd8dc0f 1px, #00000000 1px),
+    linear-gradient(to right, #cfd8dc0f 1px, #00000000 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+}
+
+.dashboard-title {
+  margin: 25px;
+  background-color: #112954;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

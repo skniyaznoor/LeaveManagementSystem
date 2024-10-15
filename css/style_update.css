@@ -1,0 +1,182 @@
+.dashboard-control-manager {
+  overflow: hidden;
+  display: flex;
+  background-color: #112954;
+  height: 401px;
+  position: relative;
+  justify-content: space-evenly;
+  width: 100%;
+  background-image: linear-gradient(#cfd8dc0f 1px, #00000000 1px),
+    linear-gradient(to right, #cfd8dc0f 1px, #00000000 1px);
+  background-size: 40px 40px;
+}
+
+.welcome-manager h2 {
+  color: white;
+}
+
+.dashbboard-manager {
+  width: 100%;
+  text-align: -webkit-center;
+}
+
+.leave-request-image {
+  width: 100%;
+}
+
+.welcome-manager {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.welcome-manager img {
+  width: 40px;
+  margin-right: 15px;
+  height: 40px;
+  align-self: center;
+}
+
+.cards-title-heading h3 {
+  border: 1px solid #112954;
+  border-radius: 7px;
+  padding: 8px;
+  color: #112954;
+  width: 150px;
+  text-align: center;
+}
+
+.cards-title-heading h3:hover {
+  color: white;
+  background-color: #112954;
+}
+
+.view-request a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.view-request a:hover {
+  background-color: white;
+  color: #112954;
+}
+
+.update-controls {
+  background-color: white;
+  padding: 27px;
+}
+
+.table-update {
+  margin-top: 25px;
+}
+
+.table-update table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #135b8f;
+  color: white;
+  font-size: 18px;
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody {
+  background-color: white;
+}
+
+tbody td {
+  font-size: 16px;
+}
+
+table tbody tr:hover {
+  background-color: #24265647 !important;
+  cursor: pointer;
+}
+
+tbody td input {
+  height: 25px;
+  padding-left: 5px;
+}
+
+.update-btn button {
+  display: flex;
+  padding: 10px 20px;
+  border: 1px solid #112954;
+  color: #112954;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  background-color: white;
+  float: inline-end;
+}
+
+.update-btn button:hover {
+  background-color: #112954;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.pagination a {
+  margin: 0 5px;
+  padding: 8px 12px;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: #282f41;
+  color: white;
+}
+
+.pagination a:hover {
+  background-color: #ddd;
+}
+
+.search-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-submit {
+  padding: 10px;
+  border: 1px solid #112954;
+  border-radius: 7px;
+  color: white;
+  background-color: #112954;
+}
+
+#search-bar {
+  padding: 10px;
+  border: 1px solid #112954;
+  border-radius: 7px;
+  width: 300px;
+}

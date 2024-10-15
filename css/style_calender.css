@@ -1,0 +1,496 @@
+.dashboard-control-manager {
+  overflow: hidden;
+  display: flex;
+  background-color: #112954;
+  height: 401px;
+  position: relative;
+  justify-content: space-evenly;
+  width: 100%;
+  background-image: linear-gradient(#cfd8dc0f 1px, #00000000 1px),
+    linear-gradient(to right, #cfd8dc0f 1px, #00000000 1px);
+  background-size: 40px 40px;
+}
+
+.welcome-manager h2 {
+  color: white;
+}
+
+.dashbboard-manager {
+  width: 100%;
+  text-align: -webkit-center;
+}
+
+.leave-request-image {
+  width: 100%;
+}
+
+.welcome-manager {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.welcome-manager img {
+  width: 40px;
+  margin-right: 15px;
+  height: 40px;
+  align-self: center;
+}
+
+.view-request a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.view-request a:hover {
+  background-color: white;
+  color: #112954;
+}
+
+.keep-all-contain {
+  background-color: white;
+}
+
+.cards-title-heading h3 {
+  border: 1px solid #112954;
+  border-radius: 7px;
+  padding: 8px;
+  color: #112954;
+  margin: 20px 0 0 30px;
+  width: 150px;
+  text-align: center;
+}
+
+.controls-container h3:hover {
+  background-color: #082745;
+  color: white;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.controls-container form {
+  display: flex;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: #112954;
+  padding: 12px;
+  align-items: center;
+  margin: 20px 20px 0 0;
+}
+
+.controls-container label {
+  font-size: 1rem;
+  color: white;
+  margin-right: 5px;
+}
+
+.controls-container select {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #ffffff47;
+}
+
+.controls-container button {
+  background-color: #ffffff47;
+  color: #fff;
+  border: hidden;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  font-size: 1rem;
+}
+
+.controls-container button:hover,
+.controls-container select:hover {
+  background-color: white;
+  color: black;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-right: 5px solid #112954;
+  margin-bottom: 30px;
+  width: 70%;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 0fr);
+  gap: 10px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 30px 0px 30px 40px;
+}
+
+.day {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  width: 130px;
+}
+
+.day:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.employee-leave-container {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.date-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.employee-leave {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* .red-day {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+} */
+
+.tooltip {
+  content: attr(title);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 0.9;
+}
+
+.day:hover .tooltip {
+  display: block;
+}
+
+/* .employee-leave:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 0.9;
+}
+
+.employee-leave:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  z-index: 1000;
+} */
+
+.legend-container {
+  text-align: left;
+  max-width: 1200px;
+  margin: 25px 20px 0 20px;
+}
+
+.legend-container h2 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.legend-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.legend-container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.calender-flex {
+  display: flex;
+  margin-top: 25px;
+}
+
+.table-display-record {
+  background-color: #112954;
+  padding: 0 25px 25px 25px;
+}
+
+.table-record {
+  margin-top: 25px;
+}
+
+.table-record table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #135b8f;
+  color: white;
+  font-size: 18px;
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody {
+  background-color: white;
+}
+
+tbody td {
+  font-size: 16px;
+}
+
+table tbody tr:hover {
+  background-color: #24265647 !important;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .controls-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .controls-container form {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+
+  .day {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .day:hover {
+    transform: scale(1.1);
+    z-index: 10;
+  }
+
+  .date-number {
+    font-size: 1rem;
+  }
+
+  .employee-leave {
+    width: 10px;
+    height: 10px;
+  }
+
+  .legend-container {
+    text-align: center;
+  }
+
+  .legend-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .legend-container li {
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .legend-color {
+    width: 12px;
+    height: 12px;
+  }
+
+  .calender-flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .calendar-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .day {
+    min-height: 90px;
+  }
+}
+.form-and-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-search-form {
+  display: flex;
+  gap: 10px;
+  padding: 8px;
+  margin: 20px 0 20px 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  width: 650px;
+  align-items: center;
+}
+
+.filter-search-form select,
+.filter-search-form button,
+.filter-search-form input {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.filter-search-form input {
+  width: 230px;
+}
+
+.filter-search-form button,
+.filter-search-form select {
+  width: 100px;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.pagination a {
+  padding: 8px 12px;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 4px;
+}
+
+.pagination a.active {
+  background-color: #4789ff;
+  color: white;
+}
+
+.red-background {
+  background-color: red;
+  color: white;
+}
+
+.employee-leave-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.employee-leave {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.expanded-dots {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow-y: auto;
+  padding: 5px;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expanded-dots .employee-leave {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.leave-chart {
+  width: 300px;
+}
+
+.pie-chart-flex {
+  display: flex;
+}

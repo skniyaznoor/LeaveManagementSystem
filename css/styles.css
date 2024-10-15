@@ -1,0 +1,288 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-title {
+  background-color: #0a3d62;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance-chart {
+  margin: 35px;
+}
+
+.request-link {
+  margin-left: 35px;
+}
+
+.dashboard-title h2 {
+  margin: 0;
+  color: white;
+}
+
+.dashboard-title p {
+  font-size: 16px;
+}
+
+h2 {
+  color: #0a3d62;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.table-history {
+  margin: 27px;
+  margin-bottom: 5px;
+}
+
+.table-history h3 {
+  margin-bottom: 10px;
+}
+
+.link-niyaz {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0a3d62;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+link-niyaz:hover {
+  background-color: #082745;
+}
+
+.canvas-control {
+  height: 250px;
+  position: absolute;
+  left: 70%;
+}
+
+/* @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .dashboard-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  table {
+    font-size: 14px;
+  }
+} */
+
+.load-history-page a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0a3d62;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 27px;
+}
+
+.load-history-page a:hover {
+  background-color: #082745;
+}
+
+.view-request a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.view-request a:hover {
+  background-color: white;
+  color: #112954;
+}
+
+.calendar-table {
+  margin: 25px;
+  border-radius: 10px;
+}
+.calendar-table h1 {
+  padding: 12px;
+  color: black;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.calendar-table h3 {
+  padding: 2px;
+  color: black;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.leave-details {
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.inner-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inner-table thead {
+  background-color: #112954bd;
+  color: white;
+}
+
+.inner-table th {
+  font-size: 15px;
+}
+
+.inner-table th,
+.inner-table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.toggle-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 16px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  color: black;
+  font-weight: 700;
+}
+
+.calendar-body-record {
+  background-color: white;
+  padding: 25px;
+}
+
+.load-more a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #112954;
+  color: #112954;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 27px;
+}
+
+.load-more a:hover {
+  background-color: #112954;
+  color: white;
+}
+
+.load-more {
+  text-align: center;
+}
+
+.welcome-manager h2 {
+  color: white;
+}
+
+.dashboard-manager {
+  text-align: center;
+}
+
+.dashboard-control-manager {
+  overflow: hidden;
+  display: flex;
+  background-color: #112954;
+  height: 401px;
+  position: relative;
+  justify-content: space-evenly;
+  width: 100%;
+  background-image: linear-gradient(#cfd8dc0f 1px, #00000000 1px),
+    linear-gradient(to right, #cfd8dc0f 1px, #00000000 1px);
+  background-size: 40px 40px;
+}
+
+.table-container {
+  overflow: hidden;
+  width: 60%;
+  border-radius: 7px;
+  border: 1px solid #112954;
+  text-align: center;
+  position: relative;
+  left: 20%;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align-last: center;
+  color: black;
+  position: relative;
+}
+th {
+  background-color: #77889985;
+  font-size: 18px;
+  font-size: 24px;
+  padding: 18px;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  border-top: 0px;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+}
+
+th:hover {
+  background-image: linear-gradient(
+    43deg,
+    #ffffff00 0%,
+    #ffffff5c 46%,
+    #bababa08 100%
+  );
+}
+
+.faded {
+  opacity: 0.2;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.leave-details.visible,
+.employee-row.active {
+  opacity: 1;
+  pointer-events: auto;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease-in-out;
+}
